@@ -21,14 +21,17 @@ var student = prompt('What is your FullName ? ');
 
 alert('Welcome ' + student);
 
+
+function writePassword() {
+
 var userPassword = prompt('Enter the password!');
  var password = '123456';
 
  while(userPassword !== password){  
       userPassword = prompt('Please enter the correct password!')
  }
-
-
+}
+writePassword();
 
  var subject = prompt('whats your subject?!','Accounting , Econome');
      
@@ -38,10 +41,13 @@ var userPassword = prompt('Enter the password!');
  }
  
  
+
+
  var sub = prompt('How many lectures or subject would you like to see?');
  
  var image = ''; 
  
+
 
  for(var i = 1 ; i <=sub; i++ ){
      if(subject === 'Accounting'){
@@ -52,3 +58,11 @@ var userPassword = prompt('Enter the password!');
  }
  console.log(image);
  document.write(image); 
+
+
+ var i = 0;
+while( i <= 10 ) {
+  console.log(i);
+  i++;
+}
+
